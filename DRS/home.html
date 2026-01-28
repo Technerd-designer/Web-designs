@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".par").fadeIn(5000);
+        });
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="drs.css">
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+        <div class="logo"><img src="/DRS/images/drst.png" alt=""></div>
+        <span onclick="openNav()">
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+        </span>
+        <div id="nav" class="sidenav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="#" target="_self">Home</a>
+            <div class="drop">
+            <button onclick="drop()" class="btn">About</button>
+            <div class="about" id="aboutus">
+                <a href="who.html">who we are</a>
+                <a href="what.html">what we do</a>
+                <a href="manage.html">management</a>
+            </div>
+            </div>
+            <a href="projects.html" target="_self">Our projects</a>
+            <a href="partners.html" target="_self">Our partners</a>
+            <a href="contacts.html" target="_self">Contacts</a>
+           </div> 
+        </div>
+        <div class="wavy">
+            <span id="one" style="--i:1">d</span>
+            <span id="one" style="--i:2">i</span>
+            <span id="one" style="--i:3">s</span>
+            <span id="one" style="--i:4">a</span>
+            <span id="one" style="--i:5">b</span>
+            <span id="one" style="--i:6">i</span>
+            <span id="one" style="--i:7">l</span>
+            <span id="one" style="--i:8">i</span>
+            <span id="one" style="--i:9">t</span>
+            <span id="one" style="--i:10">y</span>
+            <span id="one" style="--i:11">r</span>
+            <span id="one" style="--i:12">e</span>
+            <span id="one" style="--i:13">l</span>
+            <span id="one" style="--i:14">i</span>
+            <span id="one" style="--i:15">e</span>
+            <span id="one" style="--i:16">f</span>
+            <span id="one" style="--i:17">s</span>
+            <span id="one" style="--i:18">e</span>
+            <span id="one" style="--i:19">r</span>
+            <span id="one" style="--i:20">v</span>
+            <span id="one" style="--i:21">i</span>
+            <span id="one" style="--i:22">c</span>
+            <span id="one" style="--i:23">e</span>
+            <span id="one" style="--i:24">s</span>
+            <span id="one" style="--i:25">(</span>
+            <span id="one" style="--i:26">d</span>
+            <span id="one" style="--i:27">r</span>
+            <span id="one" style="--i:28">s</span>
+            <span id="one" style="--i:29">)</span>
+            <br>
+            <div id="wave">
+                <span id="one" style="--i:30">t</span>
+                <span id="one" style="--i:31">a</span>
+                <span id="one" style="--i:32">n</span>
+                <span id="one" style="--i:33">z</span>
+                <span id="one" style="--i:34">a</span>
+                <span id="one" style="--i:35">n</span>
+                <span id="one" style="--i:36">i</span>
+                <span id="one" style="--i:37">a</span>
+            </div>
+        </div>
+        <br>
+        <p class="par"><i>Equity for life</i></p><br>  
+        <br>
+        <div class="social">
+            <img src="/DRS/images/fb1.png" alt="">
+            <p>DRS-Tanzania</p>
+            <br>
+            <img src="/DRS/images/IG3.png" alt="">
+            <p>@drstanzania</p>
+            <br>
+            <img src="/DRS/images/twitter2.png" alt="">
+            <p>@drs_tanzania</p>
+            <br>
+            <img src="/DRS/images/youtube.png" alt="">
+            <p>DRS Tanzania</p>
+        </div>
+        <br>
+    </div>
+   <script>
+    function openNav(){
+        document.getElementById("nav").style.width="180px";
+    }
+    function closeNav(){
+        document.getElementById("nav").style.width="0";  
+    }
+   </script>
+
+   <!-- for the ABOUT button -->
+   <script>
+    function drop(){
+        document.getElementById("aboutus").classList.toggle("show");
+    }
+    window.onclick=function(event){
+        if(!event.target.matches('.btn')){
+            var dropdown=document.getElementsByClassName("about");
+            var i;
+            for(i=0; i < dropdown.length; i++){
+                var openDrop=dropdown[i];
+                if(openDrop.classList.contains('show')){openDrop.classList.remove('show');}
+            }
+        }
+    }
+</script>
+</body>
+</html>

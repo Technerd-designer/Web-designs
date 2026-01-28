@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button").click(function(){
+                $("form").submit(function(){
+                    alert("Your message has been received!Thank you.");
+                });
+            });
+        });
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="drs.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="/DRS/images/drst.png" alt=""></div>
+            <span onclick="openNav()">
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+            </span>
+            <div id="nav" class="sidenav">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="home.html" target="_self">Home</a>
+                <div class="drop">
+                <button onclick="drop()" class="btn">About</button>
+                <div class="about" id="aboutus">
+                    <a href="who.html">who we are</a>
+                    <a href="what.html">what we do</a>
+                    <a href="manage.html">management</a>
+                </div>
+                </div>
+                <a href="projects.html" target="_self">Our projects</a>
+                <a href="partners.html" target="_self">Our partners</a>
+                <a href="#" target="_self">Contacts</a>
+               </div> 
+               <div class="contacts">
+                <img src="/DRS/images/email.png" alt="" class="email">
+                <p class="text" id="info">info@drst.or.tz</p>
+                <br>
+                <br>
+                <img src="/DRS/images/telephone.png" alt="" class="phone">
+                <p class="text" id="num">+255 620 583 841</p>
+                <br>
+                <br>
+                <img src="/DRS/images/pin.png" alt="" class="pin">
+                <p class="text" id="loc">Kasulu Town,Murobona Area,Kigoma</p>
+                <br>
+                <br>
+                <form action="">
+                    <p>Please leave your comment/message here:</p> 
+                    <textarea type="text" autocomplete="off" placeholder="write your message" required></textarea><br>
+                    <br>
+                    <button type="submit" name="submit" id="button">Submit</button>
+                    <button type="reset" name="reset" id="reset">Reset</button>
+                </form>
+               </div>
+               <br>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById("nav").style.width="180px";
+        }
+        function closeNav(){
+            document.getElementById("nav").style.width="0"; 
+        }
+    </script>
+
+    <!-- for the ABOUT button -->
+   <script>
+    function drop(){
+        document.getElementById("aboutus").classList.toggle("show");
+    }
+    window.onclick=function(event){
+        if(!event.target.matches('.btn')){
+            var dropdown=document.getElementsByClassName("about");
+            var i;
+            for(i=0; i < dropdown.length; i++){
+                var openDrop=dropdown[i];
+                if(openDrop.classList.contains('show')){openDrop.classList.remove('show');}
+            }
+        }
+    }
+</script>
+</body>
+</html>

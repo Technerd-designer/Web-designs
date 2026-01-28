@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="drs.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="/DRS/images/drst.png" alt=""></div>
+            <span onclick="openNav()">
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+            </span>
+            <div id="nav" class="sidenav">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="home.html" target="_self">Home</a>
+                <div class="drop">
+                    <button onclick="drop()" class="btn">About</button>
+                <div class="about" id="aboutus">
+                    <a href="who.html" target="_self">who we are</a>
+                    <a href="#" target="_self">what we do</a>
+                    <a href="manage.html" target="_self">management</a>
+                </div>
+                </div>
+                <a href="projects.html" target="_self">Our projects</a>
+                <a href="partners.html" target="_self">Our partners</a>
+                <a href="contacts.html" target="_self">Contacts</a>
+               </div> 
+        </div>
+        <div id="par">
+            <h2><i>What we do</i> </h2>
+            <p>
+               By and large,and with the urge to add real value to the community in broader sense,DRS-Tanzania focuses towards five ultimate sustainable
+               results,through effective service provisions.
+            </p>
+            <br>
+            <p>
+                The first result focus is supporting Persons with Special Needs(PSNs) individually and within set groups to enable them improve their living
+                status and within their<br>entire llvelihood journey.This includes making beneficiaries understand themselves as people responsible for
+                their own living.
+            </p>
+            <br>
+            <p>
+                The second result-based focus is ensuring fully inclusive existence,understanding and involvement in all societal engagements.
+            </p>
+            <br>
+            <p>
+                The third focus is on triggering prosperity and development advancement through formalized functional groups.
+            </p>
+            <br>
+            <p>
+                Our fourth focus is supporting and facilitating towards strengthening the organizational capacity of active Community Based Organizations(CBOs)
+                dealing to any basket of esteemed beneficiaries.This is done through tailored training initiatives and ensuring existence of effective leadership and good governance
+                practices for the benefit<br>of the beneficiaries they serve.
+            </p>
+            <br>
+            <p>
+                The fifth and final focus is propagating,through effective facilitations and sensitization programs,to the existence of peace and harmony among beneficiaries as specific
+                groups and also to the entire society they live in.Essence of this is to ensure happy and advantageous living status to all citizens.
+            </p>
+            <br>
+            <h3>Specific functions</h3>
+            <p>
+                Most of the projects,programs and activities undertaken by our organization are generally associated with efforts in People with Special Needs programs.
+                Such projects,programs and activities are:
+            </p>
+            <div class="activities">
+                <div class="what">
+                    <button id="panel">1.Social Protection Interventions for People with Special Needs(PSNs) and Adolescent Girls and Young Women(AGYW)</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        The social protection program focuses on providing support to people with special needs and adolescent girls and young women.It 
+                        provides primary and secondary school AGYW from poor households with the necessary resources to continue their education.Additionally,it
+                        also provides support to out of school vulnerable AGYW aged 15-24,helping to prevent them from falling into poverty and becoming vulnerable to exploitation.
+                    </p>
+                </div>
+                <div class="what">
+                    <button id="panel">2.Ending violence against women and children</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        The goal of this program is to create a safer and more just world for women and children by addressing and ending violence against
+                        them.It provides support to victims of violence,including access to medical care,counseling and legal assistanceAdditionally,the program
+                        works to raise awareness about the issue of violence against women and children and to engage communities in the fight to end it.
+                    </p>
+                </div> 
+                <div class="what">
+                    <button id="panel">3.Economic empowerment related activities</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        This program aims to provide people with the opportunities and resources they need to achieve sustainable growth and success.This may
+                        include training programs,access to finance and markets and other support to help individuals start and grow their businesses.Additionally,
+                        the program may focus on empowering women and other marginalized groups,helping to reduce inequality and create a more inclusive and equitable
+                        society.
+                    </p>
+                </div> 
+                <div class="what">
+                    <button id="panel">4.Preventing human trafficking</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        This program works to protect the vulnerable and ensure their rights are respected.This includes providing education and awareness-raising
+                        activities,<br>as well as providing support to victims of trafficking.The program may also work to strengthen the legal and regulatory
+                        framework around human trafficking and to engage the community in the fight against it.
+                    </p>
+                </div>  
+                <div class="what">
+                    <button id="panel">5.Health</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        The health program focuses on improving access to quality healthcare for all.This may include providing medical services and support
+                        to underserved communities,improving health facilities and increasing awareness about important health issues.The program may also work
+                        to strengthen the healthcare system,making it more effective and efficient and to ensure that everyone has access to the care they need.
+                    </p>
+                </div> 
+                <div class="what">
+                    <button id="panel">6.Education</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        The education program aims to transform lives through learning and development.This may include providing access to quality education for people who
+                        are underserved,supporting teacher training and development and improving educational facilities.Additionally,the program may work to raise awareness
+                        about the importance of education and to engage the communities in the fight to ensure that everyone has access to the education the need.
+                    </p>
+                </div>      
+                <div class="what">
+                    <button id="panel">7.Research</button>
+                    <button class="press">&#8897</button>
+                    <p class="panel">
+                        Our Strategic Research Department undertakes policy research and analysis to increase stakeholders' knowledge through generation of research evidence,which forms
+                        a major input to economic,social and other policy-making processes in the country.Both demand and supply-driven research is planned and implemented,with the
+                        intention to respond to the socio-economic changes and advance knowledge in key areas of national,regional or global importance.
+                        <br>
+                        The research agenda is therefore shaped by the evolving economic policies,the dynamics of political governance and the emerging social economic challenges emanating from
+                        the changing economic environment in Tanzania,the EAC and worldwide.The research is also dictated by emerging global issues that have increased the need for research based evidence.
+                        <br>
+                        Our annual plans are geared towards carrying out rigorous and policy oriented research that generates new insights and options for promoting policies that facilitate
+                        mineral-related inclusive growth.
+                    </p>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById("nav").style.width="180px";
+            document.getElementById("par").style.marginLeft="180px";
+        }
+        function closeNav(){
+            document.getElementById("nav").style.width="0";
+            document.getElementById("par").style.marginLeft="0";  
+        }
+    </script>
+    
+    <!-- for the ABOUT button -->
+    <script>
+        function drop(){
+            document.getElementById("aboutus").classList.toggle("show");
+        }
+        window.onclick=function(event){
+            if(!event.target.matches('.btn')){
+                var dropdown=document.getElementsByClassName("about");
+                var i;
+                for(i=0; i < dropdown.length; i++){
+                    var openDrop=dropdown[i];
+                    if(openDrop.classList.contains('show')){openDrop.classList.remove('show');}
+                }
+            }
+        }
+    </script>
+    
+    <!-- for the specific functions -->
+    <script>
+        var slide=document.getElementsByClassName("press");
+        var i;
+        for(i=0; i < slide.length; i++){
+            slide[i].addEventListener("click",function(){
+                this.classList.toggle("active");
+
+            var panel=this.nextElementSibling;
+            if(panel.style.display==="block"){
+                panel.style.display="none";
+            }
+            else{panel.style.display="block";}
+            });
+        }
+    </script>
+</body>
+</html>

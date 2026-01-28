@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drs.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="/DRS/images/drst.png" alt=""></div>
+            <span onclick="openNav()">
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+            </span>
+            <div id="nav" class="sidenav">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="home.html" target="_self">Home</a>
+                <div class="drop">
+                <button onclick="drop()" class="btn">About</button>
+                <div class="about" id="aboutus">
+                    <a href="who.html" target="_self">who we are</a>
+                    <a href="what.html" target="_self">what we do</a>
+                    <a href="#" target="_self">management</a>
+                </div>
+                </div>
+                <a href="projects.html" target="_self">Our projects</a>
+                <a href="partners.html" target="_self">Our partners</a>
+                <a href="contacts.html" target="_self">Contacts</a>
+               </div> 
+        </div>
+        <div id="par">
+            <h2><i>Our leadership/management</i> </h2>
+            <p>
+                We are goverened by members,through the Annual General Assembly,The Board of Directors and the Secretariat.
+            </p>
+            <br>
+            <p>
+                The Annual General Assembly is the supreme organ of the organization.It comprises all the organization's members.All bodies established under its authority are surbodinate and accountbale
+                to the General Assembly.
+            </p>
+            <br>
+            <p>
+                The second organ is the Board of Directors,which provides regular guidance to the work of the organization;they are responsible for the policy and administration of general and business matters 
+                of the organization.The Board comprises a minimum of five and a maximum of seven members who meet periodically.They appoint the Executive Director who is secretary to the Board and is responsible for 
+                the day to day management of the organization.He/she is assisted by a management team.<br>
+                Members hold office for a term of not more than 3 years and are eligible for reappointment.
+            </p>
+            <br>
+            <p>
+                The implementation of the day to day functions of the organization is vested in the Secretariat,which is led by the Executive Director,
+                who reports to the Board of Directors.The supporting staff for the Secretariat are appointed and/or recruited by the Executive Director on a contractual basis,with their contracts
+                subject to renewal upon successful performance.
+            </p>
+            <br>
+            <p>
+                Our organization's executive management and administration is headed by the Managing Director.It involves the departments of:<br>
+                <ul>
+                    <li>Human Resources</li>
+                    <li>Finance</li>
+                    <li>Information Technology</li>
+                    <li>Public Relations</li>
+                    <li>Livelihood</li>
+                    <li>Advocacy</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById("nav").style.width="180px";
+            document.getElementById("par").style.marginLeft="180px";
+        }
+        function closeNav(){
+            document.getElementById("nav").style.width="0";
+            document.getElementById("par").style.marginLeft="0";  
+        }
+    </script>
+
+    <!-- for the ABOUT button -->
+    <script>
+        function drop(){
+            document.getElementById("aboutus").classList.toggle("show");
+        }
+        window.onclick=function(event){
+            if(!event.target.matches('.btn')){
+                var dropdown=document.getElementsByClassName("about");
+                var i;
+                for(i=0; i < dropdown.length; i++){
+                    var openDrop=dropdown[i];
+                    if(openDrop.classList.contains('show')){openDrop.classList.remove('show');}
+                }
+            }
+        }
+    </script>
+</body>
+</html>
